@@ -1,3 +1,9 @@
-document.getElementById('alertBtn').addEventListener('click', function() {
-    alert('Привет! Сайт успешно работает и интерактивные элементы функционируют!');
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('contactBtn');
+    
+    if (btn) {
+        btn.addEventListener('click', () => {
+            alert('Спасибо за интерес! Можете написать мне на почту или в Telegram.');
+        });
+    }
 });

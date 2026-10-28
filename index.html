@@ -4,39 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Шаг 1: Мета-тег для подтверждения прав от Яндекс Вебмастера (вставите сюда свой код после получения) -->
-    <meta name="yandex-verification" content="ваш_код_из_вебмастера_сюда">
+    <!-- Шаг 1: Мета-тег верификации Яндекс Вебмастера (вставите код, когда получите его в Яндексе) -->
+    <meta name="yandex-verification" content="ваш_код_из_вебмастера">
     
-    <!-- Шаг 1 (дополнительно): Ваша группа и фамилия -->
+    <!-- Шаг 1 (дополнительно): Ваши данные -->
     <meta name="student-id" content="ИВТ-21-Иванов">
 
     <!-- Шаг 4: SEO-теги -->
-    <title>Мир пушистых котиков — Главная страница</title>
-    <meta name="description" content="Увлекательный сайт о домашних кошках, их повадках, уходе и содержании. Полезные советы для любителей животных.">
+    <title>Алексей Смирнов — Frontend-разработчик и UI/UX дизайнер</title>
+    <meta name="description" content="Персональный сайт веб-разработчика. Проектирование и создание современных, быстрых и удобных сайтов и веб-интерфейсов.">
 
-    <!-- Шаг 4: Open Graph теги для соцсетей -->
-    <meta property="og:title" content="Мир пушистых котиков">
-    <meta property="og:description" content="Увлекательный сайт о домашних кошках, уходе и содержании.">
+    <!-- Шаг 4: Open Graph теги -->
+    <meta property="og:title" content="Алексей Смирнов — Frontend-разработчик">
+    <meta property="og:description" content="Портфолио веб-разработчика: проекты, навыки и контакты.">
     <meta property="og:type" content="website">
 
-    <!-- Подключение стилей -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать в мир котиков!</h1>
-        <p>Сайт создан в рамках практической работы №3</p>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Alex.dev</div>
+            <ul class="nav-links">
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>О нашем проекте</h2>
-            <p>Здесь мы изучаем индексацию сайтов, настраиваем robots.txt, sitemap.xml и знакомимся с SEO.</p>
-            <button id="alertBtn">Нажми на меня</button>
+        <section class="hero" id="about">
+            <h1>Привет, я Алексей 👋</h1>
+            <p class="subtitle">Создаю чистые, быстрые и удобные веб-интерфейсы</p>
+            <div class="tags">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>UI/UX Design</span>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Проекты</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>E-Commerce App</h3>
+                    <p>Минималистичный интернет-магазин с корзиной и фильтрацией товаров.</p>
+                </div>
+                <div class="card">
+                    <h3>Task Tracker</h3>
+                    <p>Удобное приложение для планирования задач и отслеживания продуктивности.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Связаться со мной</h2>
+            <p>Открыт к новым проектам и интересным предложениям.</p>
+            <button id="contactBtn">Написать мне</button>
         </section>
     </main>
 
-    <!-- Подключение скрипта -->
+    <footer>
+        <p>&copy; 2026 Alex.dev — Все права защищены</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
